@@ -10,12 +10,13 @@ import android.widget.CompoundButton;
 import android.widget.ImageView;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
+import android.widget.Switch;
 import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
     TextView text1, text2;
-    CheckBox chkAgree;
+    Switch chkAgree;
     RadioGroup rGroup1;
     RadioButton rdoDog, rdoCat, rdoRabbit;
     Button btnOK;
@@ -58,13 +59,13 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 switch (rGroup1.getCheckedRadioButtonId()) {
                     case R.id.RdoDog:
-                        imgPet.setImageResource(R.drawable.dog);
+                        imgPet.setImageResource(R.drawable.oreo);
                         break;
                     case R.id.RdoCat:
-                        imgPet.setImageResource(R.drawable.cat);
+                        imgPet.setImageResource(R.drawable.pie);
                         break;
                     case R.id.RdoRabbit:
-                        imgPet.setImageResource(R.drawable.rabbit);
+                        imgPet.setImageResource(R.drawable.q10);
                         break;
                     default:
                         Toast.makeText(MainActivity.this, "동물 먼저 선택하세요", Toast.LENGTH_SHORT).show();
